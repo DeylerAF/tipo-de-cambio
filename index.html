@@ -9,14 +9,17 @@
   </head>
   <body>
     <form>
-      Dolar : <input type="number" id="firstNumber" /><br />
-      Euro: <input type="number" id="secondNumber" /><br />
-      <input type="button" onClick="multiplyBy()" value="Multiply" />
-      <input type="button" onClick="divideBy()" value="Divide" />
+      Tipo de Compra : <input type="number" id="tc_usd" /><br />
+      Tipo de Venta : <input type="number" id="tv_usd" /><br />
+      Euro : <input type="number" id="dif_eur" /><br />
+      <input type="button" onClick="calculate()" value="Calcular" />
+      <!-- <input type="button" onClick="divideBy()" value="Divide" /> -->
     </form>
     <p>
       The Result is : <br />
-      <span id="result"></span>
+      <span id="tc_eur"></span><br />
+      <span id="tv_eur"></span><br />
+      <span id="dif_usd"></span><br />
     </p>
   </body>
 </html>
